@@ -1,10 +1,12 @@
 print("==================================================")
-print("***************** PYTHON TUTORIAL ****************")
+print("*****************🐍PYTHON TUTORIAL🐍 ****************")
 print("==================================================")
 print("   Welcome to the Python Learning Tutorial System   ")
 print("==================================================")
 
 student_name = input("Enter your student name / username: ")
+
+
 if student_name == "":
     student_name = "Learner"
 
@@ -21,7 +23,7 @@ count = True
 while count:
     print("\n==================================================")
     print(f" STUDENT PROFILE: {student_name}")
-    print(" PROGRESS TRACKER:")
+    print(" SCORE TRACKER:")
 
     if prelim_taken:
         print(f"   [1] Prelim Status : COMPLETED (Score: {prelim_score} / 5)")
@@ -43,7 +45,7 @@ while count:
     print("[1] Prelim  (Intro, Syntax, Variables, Data Types, Operators)")
     print("[2] Midterm (Conditionals: If, Elif, Else & Nested Conditions)")
     print("[3] Finals  (Loops: While Loops, For Loops & range())")
-    print("[4] View Complete Student Summary & Analytics")
+    print("[4] View Student Progress or Score")
     print("[5] Exit System")
     print("==================================================")
 
@@ -58,16 +60,18 @@ while count:
                 print("\n--------------------------------------------------")
                 print("PRELIM - Introduction to Computers & Python")
                 print("--------------------------------------------------")
-                print("[Explanation]: A programming language is a special language used to communicate with computers.")
-                print("Common programming languages include Python, C++, PHP, Java, JavaScript, and Ruby.")
-                print("Python is widely used because it is easy to learn, readable, and versatile.")
-                print("Python was created by Guido van Rossum in 1991.")
-                print("Python is a high-level, interpreted, general-purpose programming language.")
-                print("Why learn Python?")
-                print("1. Simple and easy to learn")
-                print("2. Clean and readable syntax")
-                print("3. Very versatile")
-                print("4. Large community support")
+                print("[Explanation]: Foundations of Programming & Python")
+                print("• What is Programming?")
+                print("  - A specialized language used to communicate instructions to computers.")
+                print("  - Common languages: Python, C++, PHP, Java, JavaScript, Ruby.")
+                print("• About Python:")
+                print("  - Created by Guido van Rossum in 1991.")
+                print("  - High-level, interpreted, and general-purpose.")
+                print("• Key Advantages of Learning Python:")
+                print("  1. Simple, clean, and beginner-friendly syntax")
+                print("  2. Highly readable code structure")
+                print("  3. Exceptional versatility across domains")
+                print("  4. Massive global community support")
 
                 play = input("\nDo you want to play the mini-game for Lesson 1? (yes/no): ").lower()
                 if play in ["yes", "y"]:
@@ -98,20 +102,20 @@ while count:
 
             elif current_lesson == 2:
                 print("\n--------------------------------------------------")
-                print("PRELIM - Basic Syntax")
+                print("PRELIM - Basic Syntax & Variables")
                 print("--------------------------------------------------")
-                print("[Explanation]: A variable is a container used to store data values.")
-                print("Python uses the '=' operator for assignment.")
-                print("Variable names cannot start with numbers and are case-sensitive.")
-                print("Example code: name = 'John'")
-                print("print(name) - prints the value of the variable")
-                print("Indention matters in Python because it defines code blocks.")
-                print("Example: if age >= 18:")
-                print("    print('Adult')")
-                print("Example code: print('HELLO, WORLD!')")
-                print("Example code: print(100)")
-                print("Python comments can be written using '#'.")
-                print("Example: # This is a single-line comment")
+                print("[Explanation]: Managing Data & Code Structure")
+                print("• Variables & Assignment:")
+                print("  - Containers used to store data values in memory.")
+                print("  - Uses the assignment operator: '='")
+                print("  - Rules: Case-sensitive; cannot start with numbers.")
+                print("  - Example: name = 'John'")
+                print("• Output & Indentation:")
+                print("  - print() function displays values (e.g., print(name), print(100))")
+                print("  - Indentation is mandatory; it defines code blocks.")
+                print("  - Example: if age >= 18: print('Adult')")
+                print("• Code Comments:")
+                print("  - Written using '#' for single-line notes.")
 
                 play = input("\nDo you want to play the mini-game for Lesson 2? (yes/no): ").lower()
                 if play in ["yes", "y"]:
@@ -144,13 +148,12 @@ while count:
                 print("\n--------------------------------------------------")
                 print("PRELIM - Python Data Types")
                 print("--------------------------------------------------")
-                print("[Explanation]: Data types define the kind of data a variable can hold.")
-                print("Main types: Integer (int), Floating-point (float), String (str), and Boolean (bool).")
-                print("Example code:")
-                print("   element = 10")
-                print("   pi = 3.14")
-                print("   msg = 'Hi'")
-                print("   is_pass = True")
+                print("[Explanation]: Understanding Variable Types")
+                print("• Core Data Types:")
+                print("  - Integer (int): Whole numbers (e.g., element = 10)")
+                print("  - Floating-point (float): Decimal numbers (e.g., pi = 3.14)")
+                print("  - String (str): Text enclosed in quotes (e.g., msg = 'Hi')")
+                print("  - Boolean (bool): True or False values (e.g., is_pass = True)")
 
                 play = input("\nDo you want to play the mini-game for Lesson 3? (yes/no): ").lower()
                 if play in ["yes", "y"]:
@@ -183,12 +186,16 @@ while count:
                 print("\n--------------------------------------------------")
                 print("PRELIM - Basic Arithmetic Operators")
                 print("--------------------------------------------------")
-                print("[Explanation]: Operators perform operations on variables and values.")
-                print("Arithmetic operators include +, -, *, /, and %.")
-                print("The modulus operator (%) gives the remainder after division.")
-                print("Example code:")
-                print("   sum_result = 5 + 3")
-                print("   remainder = 10 % 3")
+                print("[Explanation]: Performing Calculations")
+                print("• Arithmetic Operators Overview:")
+                print("  - Addition (+): Combines values")
+                print("  - Subtraction (-): Finds difference")
+                print("  - Multiplication (*): Scales values")
+                print("  - Division (/): Splits values")
+                print("  - Modulus (%): Returns division remainder")
+                print("• Code Examples:")
+                print("  - sum_result = 5 + 3")
+                print("  - remainder = 10 % 3")
 
                 play = input("\nDo you want to play the mini-game for Lesson 4? (yes/no): ").lower()
                 if play in ["yes", "y"]:
@@ -219,13 +226,13 @@ while count:
                 score = 0
 
                 print("\n1. Which function outputs text to the screen in Python?")
-                print("a) display()  b) print()  c) echo()")
+                print("a) display()  b) print()  c) ghelo()")
                 ans = input("Answer: ").lower()
                 if ans == "b":
                     score += 1
 
                 print("\n2. Which of the following is a valid variable name?")
-                print("a) 2nd_name  b) user-name  c) user_name")
+                print("a) 2nd_name  b) ako-ang-bagyo  c) user_name")
                 ans = input("Answer: ").lower()
                 if ans == "c":
                     score += 1
@@ -247,3 +254,335 @@ while count:
                 ans = input("Answer: ").lower()
                 if ans == "a":
                     score += 1
+
+                print("\n--------------------------------------------------")
+                print(f" QUIZ FINISHED! Your Prelim Score: {score} / 5")
+                if score == 5:
+                    print("Badge Earned: Syntax Master")
+                elif score >= 3:
+                    print("Badge Earned: Syntax Sakto lang")
+                else:
+                    print("Badge Earned: Beginner Learner (Needs Review)")
+                print("--------------------------------------------------")
+
+                prelim_score = score
+                prelim_taken = True
+                prelim_latest = False
+
+    elif term_choice == "2":
+        midterm_latest = True
+        current_lesson = 1
+
+        while midterm_latest:
+            if current_lesson == 1:
+                print("\n--------------------------------------------------")
+                print("MIDTERM - Conditional Statements (if, elif, else)")
+                print("--------------------------------------------------")
+                print("[Explanation]: Making Decisions in Code")
+                print("• Conditional Decision-Making:")
+                print("  - Allows programs to execute code paths based on Boolean states.")
+                print("  - if: Evaluates primary condition")
+                print("  - elif: Evaluates alternate secondary conditions")
+                print("  - else: Catch-all for remaining scenarios")
+                print("• Nested Conditions:")
+                print("  - An if statement placed inside another outer if block.")
+                print("  - Example: checking ID status before verifying age requirements.")
+
+                play = input("\nDo you want to play the mini-game for Lesson 1? (yes/no): ").lower()
+                if play in ["yes", "y"]:
+                    print("\n--- LESSON 1 MINI-GAME: ALTERNATE CONDITION CHECKING ---")
+                    print("Topic: If / Elif / Else Syntax")
+                    print("Task: Fill in the keyword used to check an alternate condition.")
+                    print("Code:")
+                    print("   if score > 90:")
+                    print("       print('A')")
+                    print("   ____ score > 80:")
+                    print("       print('B')")
+                    user_answer = input("What keyword goes in the blank? ").lower()
+                    if user_answer == "elif":
+                        print("GREAT JOB! 'elif' checks secondary conditions.")
+                    else:
+                        print("IT'S OKAY TRY AGAIN. The keyword is 'elif'.")
+
+                print("\nWhat would you like to do next?")
+                print("[1] Continue to Next Lesson")
+                print("[2] Take Midterm Quiz")
+                print("[3] Back to Main Menu")
+                next_input = input("Enter option (1-3): ")
+
+                if next_input == "1":
+                    current_lesson = 2
+                elif next_input == "2":
+                    current_lesson = 3
+                else:
+                    midterm_latest = False
+
+            elif current_lesson == 2:
+                print("\n--------------------------------------------------")
+                print("MIDTERM - Logical Operators")
+                print("--------------------------------------------------")
+                print("[Explanation]: Combining & Reversing Conditions")
+                print("• Logical Operators Toolkit:")
+                print("  - 'and': Evaluates to True only if BOTH conditions are True")
+                print("  - 'or': Evaluates to True if AT LEAST ONE condition is True")
+                print("  - 'not': Reverses the Boolean outcome (True becomes False, etc.)")
+
+                play = input("\nDo you want to play the mini-game for Lesson 2? (yes/no): ").lower()
+                if play in ["yes", "y"]:
+                    print("\n--- LESSON 2 MINI-GAME: TRUE OR FALSE ---")
+                    print("Topic: Logical Operators")
+                    print("Task: Fill in the blank.")
+                    print("  10 >= 11 ____ 5")
+                    user_answer = input("What operator goes in the blank? ").lower()
+                    if user_answer == "and":
+                        print("GREAT JOB! 'and' is correct.")
+                    else:
+                        print("IT'S OKAY TRY AGAIN. The correct answer is 'and'.")
+
+                print("\nWhat would you like to do next?")
+                print("[1] Take Midterm Quiz")
+                print("[2] Back to Main Menu")
+                next_input = input("Enter option (1-2): ")
+
+                if next_input == "1":
+                    current_lesson = 3
+                else:
+                    midterm_latest = False
+
+            elif current_lesson == 3:
+                print("\n--------------------------------------------------")
+                print("MIDTERM QUIZ (5 Questions)")
+                print("--------------------------------------------------")
+                score = 0
+
+                print("\n1. Which keyword is used to begin a conditional statement?")
+                print("a) check  b) if  c) when")
+                ans = input("Answer: ").lower()
+                if ans == "b":
+                    score += 1
+
+                print("\n2. What operator is used for equality comparison in Python?")
+                print("a) =  b) ==  c) equals")
+                ans = input("Answer: ").lower()
+                if ans == "b":
+                    score += 1
+
+                print("\n3. When does the else block execute?")
+                print("a) Always  b) When previous conditions are True  c) When all previous conditions are False")
+                ans = input("Answer: ").lower()
+                if ans == "c":
+                    score += 1
+
+                print("\n4. What is a nested condition?")
+                print("a) Condition inside another condition  b) Condition inside a loop  c) Sanaol Condition")
+                ans = input("Answer: ").lower()
+                if ans == "a":
+                    score += 1
+
+                print("\n5. Which operator means 'Not Equal to'?")
+                print("a) !=  b) <>  c) NOT==")
+                ans = input("Answer: ").lower()
+                if ans == "a":
+                    score += 1
+
+                print("\n--------------------------------------------------")
+                print(f" QUIZ FINISHED! Your Midterm Score: {score} / 5")
+                if score == 5:
+                    print("Badge Earned: Logic Master")
+                elif score >= 3:
+                    print("Badge Earned: Logic Sakto lang")
+                else:
+                    print("Badge Earned: Beginner Learner (Needs Review)")
+                print("--------------------------------------------------")
+
+                midterm_score = score
+                midterm_taken = True
+                midterm_latest = False
+
+    elif term_choice == "3":
+        finals_latest = True
+        current_lesson = 1
+
+        while finals_latest:
+            if current_lesson == 1:
+                print("\n--------------------------------------------------")
+                print("FINALS - For Loops & range()")
+                print("--------------------------------------------------")
+                print("[Explanation]: Iterating Over Sequences")
+                print("• For Loop Mechanics:")
+                print("  - Iterates sequentially through items in a collection or numeric range.")
+                print("  - The range() function automatically generates number sequences.")
+                print("• Example Structure:")
+                print("  - for iter in range(3): print(iter)")
+
+                play = input("\nDo you want to play the mini-game for Lesson 1? (yes/no): ").lower()
+                if play in ["yes", "y"]:
+                    print("\n--- LESSON 1 MINI-GAME: SEQUENCE GENERATION ---")
+                    print("Topic: For Loop & Range Function")
+                    print("Task: Fill in the function used to generate numeric sequences in for loops.")
+                    print("Code:")
+                    print("   for iter in ____(5):")
+                    print("       print(iter)")
+                    user_answer = input("What function name goes in the blank? ").lower()
+                    if user_answer == "range":
+                        print("GREAT JOB! 'range' generates number sequences.")
+                    else:
+                        print("IT'S OKAY TRY AGAIN. The correct answer is 'range'.")
+
+                print("\nWhat would you like to do next?")
+                print("[1] Continue to Next Lesson")
+                print("[2] Take Finals Quiz")
+                print("[3] Back to Main Menu")
+                next_input = input("Enter option (1-3): ")
+
+                if next_input == "1":
+                    current_lesson = 2
+                elif next_input == "2":
+                    current_lesson = 3
+                else:
+                    finals_latest = False
+
+            elif current_lesson == 2:
+                print("\n--------------------------------------------------")
+                print("FINALS - While Loops")
+                print("--------------------------------------------------")
+                print("[Explanation]: Conditional Repetition")
+                print("• While Loop Mechanics:")
+                print("  - Repeatedly executes a block of code as long as its condition remains True.")
+                print("  - Crucial to update loop control variables to prevent infinite loops.")
+                print("• Example Structure:")
+                print("  - count = 1")
+                print("  - while count <= 3: print(count); count += 1")
+
+                play = input("\nDo you want to play the mini-game for Lesson 2? (yes/no): ").lower()
+                if play in ["yes", "y"]:
+                    print("\n--- LESSON 2 MINI-GAME: CONDITIONAL LOOP HEADER ---")
+                    print("Topic: While Loop Mechanics")
+                    print("Task: Fill in the loop keyword that repeats code while a condition is True.")
+                    print("Code:")
+                    print("   ____ count < 5:")
+                    print("       count = count + 1")
+                    user_answer = input("What keyword goes in the blank? ").lower()
+                    if user_answer == "while":
+                        print("GREAT JOB! 'while' creates a conditional loop.")
+                    else:
+                        print("IT'S OKAY TRY AGAIN. The keyword is 'while'.")
+
+                print("\nWhat would you like to do next?")
+                print("[1] Take Finals Quiz")
+                print("[2] Back to Main Menu")
+                next_input = input("Enter option (1-2): ")
+
+                if next_input == "1":
+                    current_lesson = 3
+                else:
+                    finals_latest = False
+
+            elif current_lesson == 3:
+                print("\n--------------------------------------------------")
+                print("FINALS QUIZ (5 Questions)")
+                print("--------------------------------------------------")
+                score = 0
+
+                print("\n1. Which loop runs as long as a condition remains True?")
+                print("a) for  b) while  c) repeat")
+                ans = input("Answer: ").lower()
+                if ans == "b":
+                    score += 1
+
+                print("\n2. How many iterations does range(5) produce?")
+                print("a) 4  b) 5  c) 6")
+                ans = input("Answer: ").lower()
+                if ans == "b":
+                    score += 1
+
+                print("\n3. What is the starting number generated by range(3) by default?")
+                print("a) 0  b) 1  c) 3")
+                ans = input("Answer: ").lower()
+                if ans == "a":
+                    score += 1
+
+                print("\n4. What occurs if a while loop condition never turns False?")
+                print("a) Syntax Error  b) Infinite Loop  c) Program Auto-Fix")
+                ans = input("Answer: ").lower()
+                if ans == "b":
+                    score += 1
+
+                print("\n5. Which keyword is used to start a for loop in Python?")
+                print("a) for  b) foreach  c) loop")
+                ans = input("Answer: ").lower()
+                if ans == "a":
+                    score += 1
+
+                print("\n--------------------------------------------------")
+                print(f" QUIZ FINISHED! Your Finals Score: {score} / 5")
+                if score == 5:
+                    print("Badge Earned: Loop Master")
+                elif score >= 3:
+                    print("Badge Earned: Loop Sakto lang")
+                else:
+                    print("Badge Earned: Loop Beginner (Needs Review)")
+                print("--------------------------------------------------")
+
+                finals_score = score
+                finals_taken = True
+                finals_latest = False
+
+    elif term_choice == "4":
+        print("\n================================================")
+        print("              STUDENT ACADEMIC SUMMARY            ")
+        print("==================================================")
+        print(f"Student Name: {student_name}")
+
+        total_quizzes_taken = 0
+        total_quiz_score = 0
+
+        if prelim_taken:
+            print(f" - Prelim Quiz Score  : {prelim_score} / 5")
+            total_quizzes_taken += 1
+            total_quiz_score += prelim_score
+        else:
+            print(" - Prelim Quiz Score  : Not Completed")
+
+        if midterm_taken:
+            print(f" - Midterm Quiz Score : {midterm_score} / 5")
+            total_quizzes_taken += 1
+            total_quiz_score += midterm_score
+        else:
+            print(" - Midterm Quiz Score : Not Completed")
+
+        if finals_taken:
+            print(f" - Finals Quiz Score  : {finals_score} / 5")
+            total_quizzes_taken += 1
+            total_quiz_score += finals_score
+        else:
+            print(" - Finals Quiz Score  : Not Completed")
+
+        print("--------------------------------------------------")
+        print(f"Total Quizzes Completed: {total_quizzes_taken} / 3")
+        print(f"Total Overall Score    : {total_quiz_score} / 15")
+        print("--------------------------------------------------")
+
+        print("=================================================")
+        if total_quizzes_taken == 3:
+            if total_quiz_score == 15:
+                print("FINAL GRADE: PERFECT ACADEMIC EXCELLENCE (GALING MO LODS🫶🏻)")
+            elif total_quiz_score >= 12:
+                print("FINAL GRADE: HIGH HONORS - (GREAT JOB😎)")
+            elif total_quiz_score >= 9:
+                print("FINAL GRADE: SATISFACTORY - (BASTA PUMASA🫡)")
+            else:
+                print("FINAL GRADE: NEED MORE REVIEW🙈🙉")
+        else:
+            print("STATUS :YOU COMPLETE ALL THE 3 TERM QUIZZES!👏🏻")
+        print("==================================================")
+
+    elif term_choice == "5":
+        print("\n==================================================")
+        print(f"Thank you for using my Python Tutorial System🫶🏻, {student_name}!")
+        print("    ^.^Keep practicing and happy coding💪🏻!^.^       ")
+        print("====================================================")
+        count = False
+
+    else:
+        print("\n⚠️ Invalid choice! Please select  between 1 and 5 ONLY.")
